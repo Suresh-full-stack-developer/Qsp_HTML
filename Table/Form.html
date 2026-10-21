@@ -6,14 +6,14 @@
     <title>Simple Form</title>
 </head>
 <body>
-    <form action="./Task2.html">
+    <form action="./Task2.html" method="get">
         <fieldset>
             <legend>Login Form</legend>
             <label for="un">User Name:</label>
-            <input type="text" id="un"/>
+            <input type="text" id="un" name="UserName" required placeholder="Enter UserName" minlength="2" maxlength="8"/>
             <br> <br>
             <label for="pwd">Password:</label>
-            <input type="password" id="pwd"/>
+            <input type="password" id="pwd" name="Password" minlength="2" maxlength="5"/>
 
             <br> <br>
 
@@ -40,10 +40,10 @@
             <select name="" id="">
                 <optgroup label="Vijay">
                 <option value=""></option>
-                <option value="">Bigil</option>
-                <option value="">Theri</option>
-                <option value="">Ghilli</option>
-                <option value="">Jana nayagan</option>
+                <option value="begil">Bigil</option>
+                <option value="theri">Theri</option>
+                <option value="ghilli">Ghilli</option>
+                <option value="Jana nayagan">Jana nayagan</option>
                 </optgroup>
                 <optgroup label="Ajith">
                     <option value="">GBU</option>
@@ -98,6 +98,23 @@
 
             <label for="">Joing Week:</label>
             <input type="week">
+            <br><br>
+
+
+            <label for="">Select Colour:</label>
+            <input type="color" name="Colour">
+            <br><br>
+
+            <label for="">Select Range:</label>
+            <input type="range" name="Range">
+            <br><br>
+
+            <label for="">Select the File:</label>
+            <input type="file" multiple>
+            <br><br>
+
+            <label for="">Search:</label>
+            <input type="search">
             <br><br>
 
             <input type="Submit">
